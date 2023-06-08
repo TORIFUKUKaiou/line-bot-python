@@ -43,4 +43,4 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
-    app.run(port=15000) # macOSは、app.run(host='0.0.0.0', port=15000)
+    app.run(port=15000)
