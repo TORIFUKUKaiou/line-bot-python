@@ -17,7 +17,7 @@ from linebot.v3.webhooks import (
     MessageEvent,
     TextMessageContent
 )
-import talkapi
+import chat_completion
 
 app = Flask(__name__)
 
@@ -46,7 +46,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessageContent)
 def handle_message(event):
-    text = talkapi.call(event.message.text)
+    text = chat_completion.call(event.message.text)
 
     with ApiClient(configuration) as api_client:
         line_bot_api = MessagingApi(api_client)
