@@ -1,9 +1,15 @@
 from openai import OpenAI
-client = OpenAI(api_key="your-api-key-here")
+# export OPENAI_API_KEY="My API Key"
+client = OpenAI()
 
-response = client.responses.create(
+completion = client.chat.completions.create(
     model="gpt-4.1",
-    input="Write a one-sentence bedtime story about a unicorn."
+    messages=[
+        {
+            "role": "user",
+            "content": "夜寝る前にちょうどいい一角獣（ユニコーン）が登場する物語を作ってください。"
+        }
+    ]
 )
 
-print(response.output_text)
+print(completion.choices[0].message.content)
