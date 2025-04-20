@@ -1,7 +1,7 @@
 import requests
 
 def get_program_list(key):
-    response = requests.get(f'https://api.nhk.or.jp/v2/pg/list/130/g1/2024-08-26.json?key={key}')
+    response = requests.get(f'https://api.nhk.or.jp/v2/pg/list/130/g1/2025-04-20.json?key={key}')
     print(response)
     print(response.json())
 
