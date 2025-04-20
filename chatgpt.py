@@ -1,13 +1,9 @@
-import os
-import openai
-openai.api_key = "API KEY"
+from openai import OpenAI
+client = OpenAI(api_key="your-api-key-here")
 
-completion = openai.ChatCompletion.create(
-  model="gpt-3.5-turbo",
-  messages=[
-    {"role": "system", "content": "You are a helpful assistant."},
-    {"role": "user", "content": "Hello!"}
-  ]
+response = client.responses.create(
+    model="gpt-4.1",
+    input="Write a one-sentence bedtime story about a unicorn."
 )
 
-print(completion.choices[0].message)
+print(response.output_text)
