@@ -10,6 +10,7 @@ updates:
     directory: "/"
     registries:
       - takumi_guard_pypi
+    insecure-external-code-execution: "allow"
     schedule:
       interval: "weekly"
     cooldown:
@@ -22,6 +23,7 @@ updates:
     directory: "/chapter4"
     registries:
       - takumi_guard_pypi
+    insecure-external-code-execution: "allow"
     schedule:
       interval: "weekly"
     cooldown:
@@ -34,6 +36,7 @@ updates:
     directory: "/chapter5"
     registries:
       - takumi_guard_pypi
+    insecure-external-code-execution: "allow"
     schedule:
       interval: "weekly"
     cooldown:
@@ -46,6 +49,7 @@ updates:
     directory: "/chapter6"
     registries:
       - takumi_guard_pypi
+    insecure-external-code-execution: "allow"
     schedule:
       interval: "weekly"
     cooldown:
@@ -58,6 +62,7 @@ updates:
     directory: "/chapter7"
     registries:
       - takumi_guard_pypi
+    insecure-external-code-execution: "allow"
     schedule:
       interval: "weekly"
     cooldown:
