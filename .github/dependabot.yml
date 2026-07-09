@@ -7,59 +7,9 @@ registries:
 
 updates:
   - package-ecosystem: "pip"
-    directory: "/"
-    registries:
-      - takumi_guard_pypi
-    insecure-external-code-execution: "allow"
-    schedule:
-      interval: "weekly"
-    cooldown:
-      default-days: 5
-      semver-major-days: 30
-      semver-minor-days: 7
-      semver-patch-days: 3
-
-  - package-ecosystem: "pip"
-    directory: "/chapter4"
-    registries:
-      - takumi_guard_pypi
-    insecure-external-code-execution: "allow"
-    schedule:
-      interval: "weekly"
-    cooldown:
-      default-days: 5
-      semver-major-days: 30
-      semver-minor-days: 7
-      semver-patch-days: 3
-
-  - package-ecosystem: "pip"
-    directory: "/chapter5"
-    registries:
-      - takumi_guard_pypi
-    insecure-external-code-execution: "allow"
-    schedule:
-      interval: "weekly"
-    cooldown:
-      default-days: 5
-      semver-major-days: 30
-      semver-minor-days: 7
-      semver-patch-days: 3
-
-  - package-ecosystem: "pip"
-    directory: "/chapter6"
-    registries:
-      - takumi_guard_pypi
-    insecure-external-code-execution: "allow"
-    schedule:
-      interval: "weekly"
-    cooldown:
-      default-days: 5
-      semver-major-days: 30
-      semver-minor-days: 7
-      semver-patch-days: 3
-
-  - package-ecosystem: "pip"
-    directory: "/chapter7"
+    directories:
+      - "/"
+      - "/chapter*"
     registries:
       - takumi_guard_pypi
     insecure-external-code-execution: "allow"
