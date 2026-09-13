@@ -10,7 +10,7 @@ if not OPENAI_API_KEY:
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 response = client.responses.create(
-    model="gpt-5.4-nano",
+    model="gpt-5.6-luna",
     input="夜寝る前にちょうどいい一角獣（ユニコーン）が登場する物語を作ってください。",
 )
 
